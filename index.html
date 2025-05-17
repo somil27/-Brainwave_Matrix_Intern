@@ -3,18 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elegant Day Planner</title>
-  <link rel="stylesheet" href="csspart.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>EcoMart - Eco-Friendly Online Store</title>
+  <link rel="stylesheet" href="websitecss.css">
 </head>
 <body>
-  <div class="background"></div>
-  <div class="container glass">
-    <h1>My Day Planner</h1>
-    <div id="clock"></div>
-    <div id="planner"></div>
-  </div>
-  <div id="toast">Task saved!</div>
-  <script src="jspart.js"></script>
+  <header>
+    <div class="logo">EcoMart</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Eco-Friendly Products for a Better Tomorrow</h1>
+    <p>Shop sustainable and reusable items</p>
+  </section>
+
+  <section id="products" class="product-section">
+    <h2>Featured Products</h2>
+    <div class="product-grid" id="product-grid">
+      <!-- Products will be injected here by JS -->
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>EcoMart is committed to promoting sustainable living by offering high-quality eco-friendly products that are good for the planet and your wallet.</p>
+  </section>
+
+  <section id="about-me">
+    <img src="images/somil.jpg" alt="Somil Shankar Gupta">
+    <div class="bio">
+      <h2>About Me</h2>
+      <p><strong>Somil Shankar Gupta</strong> is a passionate web developer currently pursuing a B.Tech in Electronics and Communication Engineering at BPIT, GGSIPU. He has hands-on experience in full-stack web development and freelancing, blending creativity and technology to build impactful solutions.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EcoMart. All rights reserved.</p>
+  </footer>
+
+  <script src="websitejs.js"></script>
 </body>
 </html>
